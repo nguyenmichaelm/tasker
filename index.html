@@ -13,7 +13,23 @@
   <header>
     <h1 class="page-title">Tasker</h1>
     <p>Click the button below to add a new task!</p>
-    <button class="btn" id="save-task">Add Task</button>
+    <form id="task-form">
+      <div class="form-group">
+        <input type="text" name="task-name" class="text-input" placeholder="Enter Task Name" />
+      </div>
+      <div class="form-group">
+        <select name="task-type" class="select-dropdown">
+          <option value="" disabled selected>Pick a task type</option>
+          <option value="Coding">Coding</option>
+          <option value="Sewing">Sewing</option>
+          <option value="Singing">Singing</option>
+          <option value="Workout">Workout</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button class="btn" id="save-task" type="submit">Add Task</button>
+      </div>
+    </form>
   </header>
 
   <main>
@@ -28,7 +44,7 @@
   <footer>
     &copy;2020 by Tasker</footer>
 
-  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
